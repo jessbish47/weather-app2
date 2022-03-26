@@ -25,8 +25,8 @@ img,
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
     margin: 10px;
-    height: 250px;
 }
 .container {
     background-color: white;
@@ -34,6 +34,7 @@ img,
     margin: 100px auto 0;
     padding: 20px;
     border-radius: 5px;
+    font-family: 'Work Sans', sans-serif;
 }
 .btn {
     color: black;
@@ -47,6 +48,7 @@ img,
 .card.card-body {
     padding: 10px;
     background-color: blue;
+    font-family: 'Work Sans', sans-serif;
 }
 #search-form {
     background-color: none;
@@ -55,17 +57,19 @@ img,
 #this-week-button {
     text-decoration: none;
 }
-#this-week-buttom :hover {
-    color: blue;
-}
 #current-temperature {
     font-size: 80px;
     padding: 20px auto;
+    font-weight: bold;
+    
 }
 #condition {
-    margin: 0px;
-    font-weight: 600;
-    font-size: 25px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
 }
 #week-forecast {
     align-items: center;
