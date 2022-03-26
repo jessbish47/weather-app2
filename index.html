@@ -11,15 +11,8 @@
     <title>Weather App</title>
 </head>
 <body>
-    <img src="images/partlysunny background image.png" alt="">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <h1>
-                    Brisbane
-                </h1>
-            </div>
-
             <div class="col-6">
                 <form id="search-form">
                     <input type="text"
@@ -34,18 +27,29 @@
                     />
                 </form>
             </div>
-
-        <div class="row">
-            <div class="col-6">
+            <div class="col-6" id="date">
                 <span id="current-day-of-the-week">
                     Monday
                 </span>
                 <span id="current-date">
                     18th
                 </span>
-                <ul>
+                <span id="current-time">
+                    2:55
+                </span>
+                <span id="hour">
+                    pm
+                </span>
+            </div>
+
+        <div class="row">
+            <div class="col-6">
+
+                <ul id="weather-information">
                     <li>
+                        <h1 id="condition">
                         Mostly Cloudy
+                        </h1>
                     </li>
                     <li>
                         <span id="min-temperature">
@@ -86,7 +90,7 @@
                     <div class="card card-body">
                         <div class="row">
                             <div class="col-2">
-                                <div class="card">
+                                <div class="card" id="week-forecast">
                                 <ul>
                                     <li>
                                         Monday
@@ -106,7 +110,7 @@
                             </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
+                                <div class="card" id="week-forecast">
                                 <ul>
                                     <li>
                                         Tuesday
@@ -126,7 +130,7 @@
                             </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
+                                <div class="card" id="week-forecast">
                                 <ul>
                                     <li>
                                         Wednesday
@@ -146,7 +150,7 @@
                             </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
+                                <div class="card" id="week-forecast">
                                 <ul>
                                     <li>
                                         Thursday
@@ -166,7 +170,7 @@
                             </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
+                                <div class="card" id="week-forecast">
                                 <ul>
                                     <li>
                                         Friday

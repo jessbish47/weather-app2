@@ -1,0 +1,38 @@
+body {
+    background-image: url(../images/partlySunnyBackground.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+    line-height: 20px;
+    padding: 10px 0px;
+    display: block;
+    text-align:
+}
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 5px;
+}
+#date {
+    display: block;
+    justify-content: right;
+}
+#weather-information {
+    margin: 20px auto;
+    font-size: 15px;
+}
+#condition {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 25px;
+}
+#week-forecast {
+    text-align: center;
+    display: flexbox;
+    padding: 5px;
+    width: 90px;
+}
