@@ -18,15 +18,29 @@ p {
 }
 ul,
 #weather-information {
-    margin: 10px;
+    margin: auto auto 0;
+    vertical-align: auto;
+    line-height: 22px;
+}
+h1,
+#condtion {
+    font-size: 20px;
 }
 img,
 #current-condition-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    margin: 10px;
+    height: 250px;
+}
+form,
+#search-city-input,
+#search-button {
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 3px 5px;
 }
 .container {
     background-color: white;
@@ -40,6 +54,7 @@ img,
     color: black;
     background-color: white;
     border: none;
+    padding: 1px;
 }
 .btn :hover {
     background-color: white;
@@ -47,12 +62,8 @@ img,
 }
 .card.card-body {
     padding: 10px;
-    background-color: blue;
+    background-color: lightgray;
     font-family: 'Work Sans', sans-serif;
-}
-#search-form {
-    background-color: none;
-    color: black;
 }
 #this-week-button {
     text-decoration: none;
@@ -63,14 +74,6 @@ img,
     font-weight: bold;
     
 }
-#condition {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-weight: 500;
-    font-size: 20px;
-}
 #week-forecast {
     align-items: center;
     justify-content: center;
@@ -80,5 +83,5 @@ img,
     padding: 3px;
     margin: 5px;
     line-height: 25px;
-    background-color: yellow;
+    background-color: white;
 }

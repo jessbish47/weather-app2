@@ -44,7 +44,6 @@
                 <span id="hour">
                     pm
                 </span>
-            </p>
             </div>
         </div>
         <div class="row">
@@ -60,6 +59,11 @@
                             </h2>
                     </li>
                     <li>
+                        <h1 id="condition">
+                            Mostly Cloudy
+                        </h1>
+                    </li>
+                    <li>
                         <span id="min-temperature">
                             20° 
                         </span>
@@ -73,6 +77,16 @@
                     <li id="humidity">
                         Humidity: 60%
                     </li>
+                    <li>
+                        <p>
+                            <a class="btn btn-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="this-week-button">
+                                    This week
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </a>
+                        </p>  
+                    </li>
                 </ul>
                 
             </div>
@@ -80,22 +94,6 @@
                 <img src="images/icons8-partly-cloudy-day.gif" alt="partly cloudy icon" id="current-condition-icon">
             </div>
         </div>    
-        <div class="row">
-            <div class="col">
-                <p>
-                    <a class="btn btn-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="this-week-button">
-                      This week
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                      </svg>
-                    </a>
-                  </p>   
-            </div>
-            <div class="col">
-                <h1 id="condition">
-                    Mostly Cloudy
-                </h1>
-            </div>
 
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
