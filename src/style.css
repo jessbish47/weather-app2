@@ -8,16 +8,30 @@ ul {
     line-height: 20px;
     padding: 10px 0px;
     display: block;
-    text-align:
 }
 footer {
     text-align: center;
     font-size: 13px;
 }
+p {
+   margin: auto; 
+}
+ul,
+#weather-information {
+    margin: 10px;
+}
+img,
+#current-condition-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 250px;
+}
 .container {
     background-color: white;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 100px auto 0;
     padding: 20px;
     border-radius: 5px;
 }
@@ -30,27 +44,37 @@ footer {
     background-color: white;
     color: blue;
 }
-.card card-body {
+.card.card-body {
+    padding: 10px;
     background-color: blue;
 }
 #search-form {
     background-color: none;
     color: black;
 }
-#date {
-    display: block;
-    justify-content: right;
+#this-week-button {
+    text-decoration: none;
 }
-#weather-information {
-    margin: 20px auto;
-    font-size: 15px;
+#this-week-buttom :hover {
+    color: blue;
 }
 #current-temperature {
-    font-size: 50px;
+    font-size: 80px;
     padding: 20px auto;
 }
 #condition {
     margin: 0px;
     font-weight: 600;
     font-size: 25px;
+}
+#week-forecast {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+    line-height: 25px;
+    background-color: yellow;
 }
