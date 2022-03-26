@@ -10,12 +10,32 @@ ul {
     display: block;
     text-align:
 }
+footer {
+    text-align: center;
+    font-size: 13px;
+}
 .container {
     background-color: white;
     max-width: 600px;
     margin: 50px auto;
-    padding: 25px;
+    padding: 20px;
     border-radius: 5px;
+}
+.btn {
+    color: black;
+    background-color: white;
+    border: none;
+}
+.btn :hover {
+    background-color: white;
+    color: blue;
+}
+.card card-body {
+    background-color: blue;
+}
+#search-form {
+    background-color: none;
+    color: black;
 }
 #date {
     display: block;
@@ -25,14 +45,12 @@ ul {
     margin: 20px auto;
     font-size: 15px;
 }
+#current-temperature {
+    font-size: 50px;
+    padding: 20px auto;
+}
 #condition {
     margin: 0px;
     font-weight: 600;
     font-size: 25px;
-}
-#week-forecast {
-    text-align: center;
-    display: flexbox;
-    padding: 5px;
-    width: 90px;
 }
