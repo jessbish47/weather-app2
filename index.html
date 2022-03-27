@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form id="search-form">
+                <form id="search-city-form">
                     <input type="text"
                     placeholder="Brisbane"
                     autocomplete="off"
@@ -59,11 +59,6 @@
                             </h2>
                     </li>
                     <li>
-                        <h1 id="condition">
-                            Mostly Cloudy
-                        </h1>
-                    </li>
-                    <li>
                         <span id="min-temperature">
                             20° 
                         </span>
@@ -91,7 +86,15 @@
                 
             </div>
             <div class="col">
-                <img src="images/icons8-partly-cloudy-day.gif" alt="partly cloudy icon" id="current-condition-icon">
+                <div class="image">
+                    <img class="image__img" src="images/icons8-partly-cloudy-day.gif" alt="partly cloudy icon">
+                    <div class="image__overlay">
+                            <div class="image__title" id="condition">
+                                Mostly Cloudy
+                            </div>
+                    </div>
+                </div>
+                
             </div>
         </div>    
 

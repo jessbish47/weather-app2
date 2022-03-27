@@ -22,23 +22,11 @@ ul,
     vertical-align: auto;
     line-height: 22px;
 }
-h1,
-#condtion {
-    font-size: 20px;
-}
-img,
-#current-condition-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-}
 form,
 #search-city-input,
 #search-button {
     border: none;
     outline: none;
-    background-color: lightblue;
     border-radius: 5px;
     padding: 3px 5px;
 }
@@ -60,10 +48,51 @@ form,
     background-color: white;
     color: blue;
 }
+.image {
+    position: relative;
+    width: 300px;
+}
+image__img {
+    display: block;
+    width: 100%;
+
+}
+.image__overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #000022;
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__title {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #3185FC;
+}
+
+
 .card.card-body {
     padding: 10px;
     background-color: lightgray;
     font-family: 'Work Sans', sans-serif;
+    border: none;
+}
+
+.card {
+    border: none;
+    border-radius: 5px;
 }
 #this-week-button {
     text-decoration: none;
@@ -73,6 +102,12 @@ form,
     padding: 20px auto;
     font-weight: bold;
     
+}
+#min-temperature {
+    color: #3185FC;
+}
+#max-temperature {
+    color: #28965A;
 }
 #week-forecast {
     align-items: center;
