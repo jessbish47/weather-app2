@@ -30,6 +30,7 @@ function displayTemperature(response) {
     let feelsLikeTempElement =document.querySelector("#feels-like");
     let humidityElement =document.querySelector("#humidity");
     let dateElement =document.querySelector("#date");
+
     temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°C`;
     conditionElement.innerHTML= response.data.weather[0].description;
     minTempElement.innerHTML= `${Math.round(response.data.main.temp_min)}°`;
@@ -40,7 +41,8 @@ function displayTemperature(response) {
 }
 
 let apiKey="0b0ec56c90b41bb11f010b0e7cfeb75c";
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=redbank Plains&appid=${apiKey}&units=metric`;
+let city= "Redbank Plains";
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
