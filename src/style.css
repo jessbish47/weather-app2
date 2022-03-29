@@ -16,19 +16,36 @@ footer {
 p {
    margin: auto; 
 }
+form,
+#search-city-input:hover {
+    border:solid  #3185FC 2px;
+    transition: 100ms;
+}
 ul,
 #weather-information {
     margin: auto auto 0;
     vertical-align: auto;
     line-height: 22px;
+    padding: 0;
 }
 form,
 #search-city-input,
 #search-button {
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 0;
     padding: 3px 5px;
+
+}
+.col,
+#animated-icon-column {
+    padding: 0;
+}
+.input,
+#search-button {
+    background-color: #fff;
+    border-radius: 0;
+    color: #28965A;
 }
 .container {
     background-color: white;
@@ -37,22 +54,23 @@ form,
     padding: 20px;
     border-radius: 5px;
     font-family: 'Work Sans', sans-serif;
+    color: #000022;
 }
 .btn {
-    color: black;
+    color: #D4DBE1;
     background-color: white;
     border: none;
     padding: 1px;
 }
 .btn :hover {
     background-color: white;
-    color: blue;
+    color: #3185FC;
 }
 .image {
     position: relative;
-    width: 300px;
+    width: 200px;
 }
-image__img {
+.image__img {
     display: block;
     width: 100%;
 
@@ -64,9 +82,7 @@ image__img {
     width:100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.95);
-    color: #000022;
     display: flex;
-    font-family: 'Work Sans', sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -77,15 +93,14 @@ image__img {
 }
 .image__title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Work Sans', sans-serif;
     color: #3185FC;
 }
 
 
 .card.card-body {
-    padding: 10px;
-    background-color: lightgray;
+    background-color: #D4DBE1;
     font-family: 'Work Sans', sans-serif;
     border: none;
 }
@@ -94,6 +109,14 @@ image__img {
     border: none;
     border-radius: 5px;
 }
+#date {
+    display: block;
+    align-items: right;
+    justify-content: right;
+    margin: auto 0 0 80px;
+    color: #D4DBE1;
+}
+
 #this-week-button {
     text-decoration: none;
 }
@@ -101,6 +124,7 @@ image__img {
     font-size: 80px;
     padding: 20px auto;
     font-weight: bold;
+    color: #3185FC;
     
 }
 #min-temperature {
@@ -115,7 +139,7 @@ image__img {
     display: block;
     margin: auto;
     text-align: center;
-    padding: 3px;
+    padding: 2px;
     margin: 5px;
     line-height: 25px;
     background-color: white;

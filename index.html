@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f666100208.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="src/style.css">
     <title>Weather App</title>
 </head>
@@ -29,11 +30,15 @@
                     />
                     <input type="submit"
                     value="🔍"
-                    id="search-button"
-                    />
+                    id="search-button" 
+ 
+ 
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                    
                 </form>
             </div>
-            <div class="col" id="date">
+            <div class="col">
+                <span id="date">
                     Monday
                 <span id="current-date">
                     18th 
@@ -44,6 +49,7 @@
                 <span id="hour">
                     pm
                 </span>
+            </span>
             </div>
         </div>
         <div class="row">
@@ -52,9 +58,9 @@
                 <ul id="weather-information">
                     <li>
                             <h2 id="current-temperature">
-                                20
+                                20°
                                 <span #unit>
-                                    °C
+                                    C
                                 </span>
                             </h2>
                     </li>
@@ -85,7 +91,7 @@
                 </ul>
                 
             </div>
-            <div class="col">
+            <div class="col" id="animated-icon-column">
                 <div class="image">
                     <img class="image__img" src="images/icons8-partly-cloudy-day.gif" alt="partly cloudy icon">
                     <div class="image__overlay">
@@ -219,7 +225,8 @@
         </div>
     </div>  
     <footer>
-        This project was coded by Jess Bishop and is open-sourced on 
+        This project was coded by 
+        <a href="Jess Bishop and is open-sourced on 
         <a href="https://github.com/jessbish47/weather-app2">
             Github
         </a>
