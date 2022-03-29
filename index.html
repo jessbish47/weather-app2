@@ -24,6 +24,7 @@
             <div class="col">
                 <form id="search-city-form">
                     <input type="text"
+                    name="city"
                     placeholder="Brisbane"
                     autocomplete="off"
                     autofocus="on"
@@ -58,12 +59,12 @@
 
                 <ul id="weather-information">
                     <li>
-                            <h2 id="current-temperature">
+                            <h2 class="temperature" id="current-temperature">
                                 20°
-                                <span #unit>
-                                    C
-                                </span>
                             </h2>
+                            <span id="unit">
+                                C
+                            </span>
                     </li>
                     <li>
                         <span id="min-temperature">
