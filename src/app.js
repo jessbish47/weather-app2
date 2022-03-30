@@ -33,7 +33,9 @@ function displayTemperature(response) {
     let iconElement =document.querySelector("#icon");
     let searchElement =document.querySelector("#search-city-input");
 
-    temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+    celsiusTemperature = response.data.main.temp;
+
+    temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
     conditionElement.innerHTML= response.data.weather[0].description;
     minTempElement.innerHTML= `${Math.round(response.data.main.temp_min)}°`;
     maxTempElement.innerHTML= `${Math.round(response.data.main.temp_max)}°`;
@@ -57,8 +59,33 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 
 }
-search("New York");
+
+function showfahrenheitTemperature(event) {
+    event.preventDefault();
+    let fahrenheightTemperature = (celsiusTemperature * 9 / 5)+32;
+    let temperatureElement = document.querySelector("#current-temperature");
+    temperatureElement.innerHTML = `${Math.round(fahrenheightTemperature)}°F`;
+
+}
+
+function showCelsiusTemperature(event) {
+   event.preventDefault();
+   let temperatureElement = document.querySelector("#current-temperature");
+   temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
+
+}
+let celsiusTemperature = null;
+
+
 
 
 let form= document.querySelector("#search-city-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-Link");
+fahrenheitLink.addEventListener("click", showfahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-Link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+search("Brisbane");
