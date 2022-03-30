@@ -40,10 +40,11 @@ function displayTemperature(response) {
     humidityElement.innerHTML= `Humidity: ${Math.round(response.data.main.humidity)}%`;
     dateElement.innerHTML= formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey="0b0ec56c90b41bb11f010b0e7cfeb75c";
-let city= "Paris";
+let city= "San Francisco";
 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
