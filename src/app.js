@@ -110,34 +110,8 @@ function handleSubmit(event) {
 
 }
 
-function showfahrenheitTemperature(event) {
-    event.preventDefault();
-    let fahrenheightTemperature = (celsiusTemperature * 9 / 5)+32;
-    celsiusLink.classList.remove("active");
-    fahrenheitLink.classList.add("active");
-    let temperatureElement = document.querySelector("#current-temperature");
-    temperatureElement.innerHTML = `${Math.round(fahrenheightTemperature)}°F`;
-
-}
-
-function showCelsiusTemperature(event) {
-   event.preventDefault();
-   celsiusLink.classList.add("active");
-   fahrenheitLink.classList.remove("active");
-   let temperatureElement = document.querySelector("#current-temperature");
-   temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
-
-}
-let celsiusTemperature = null;
-
-
 let form= document.querySelector("#search-city-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-Link");
-fahrenheitLink.addEventListener("click", showfahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-Link");
-celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Brisbane");
