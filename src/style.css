@@ -76,7 +76,7 @@ input,
     max-width: 600px;
     margin: 100px auto 0;
     padding: 20px;
-    border-radius: 0px;
+    border-radius: 3px;
     font-family: 'Work Sans', sans-serif;
     color: #000022;
 }
@@ -118,12 +118,13 @@ input,
     background-color: #D4DBE1;
     font-family: 'Work Sans', sans-serif;
     border: none;
+    border-radius: 3px;
 }
 
 .card {
     border: none;
-    border-radius: 0px;
-    margin: 5px;
+    border-radius: 3px;
+    margin: 9px;
 }
 #condition {
     text-transform: capitalize;
