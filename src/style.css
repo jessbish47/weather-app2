@@ -124,7 +124,18 @@ input,
 .card {
     border: none;
     border-radius: 3px;
-    margin: 9px;
+    margin: 3px;
+    
+}
+.weather-forecast-week {
+    text-align: center;
+    line-height: 2;
+}
+.weather-forcast-temperature-min {
+    color: blue;
+}
+.weather-forcast-temperature-max {
+    color: #28965A;
 }
 #condition {
     text-transform: capitalize;
@@ -152,21 +163,4 @@ input,
     font-weight: bold;
     color: #3185FC;
     
-}
-#min-temperature {
-    color: #3185FC;
-}
-#max-temperature {
-    color: #28965A;
-}
-#week-forecast {
-    align-items: center;
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 2px;
-    margin: 5px;
-    line-height: 25px;
-    background-color: white;
 }
