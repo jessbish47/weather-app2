@@ -21,6 +21,35 @@ console.log(day);
 return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+    let forecastElement=document.querySelector("#weather-forecast-week");
+
+    let forecastHTML =`<div class="row">`;
+    let days = ["Monday", "Tuesday","Wednesday", "Thursday","Friday"];
+    days.forEach(function(day) {
+           forecastHTML = forecastHTML + `
+    
+        <div class="col-2">
+            <div class="card" width=80px>
+                <div class="weather-forecast-date" width=80px>
+                    ${day}
+                </div>
+                <i class="fa-solid fa-cloud"></i>
+                    <div class="weather-forecast-temperatures">
+                        <span class="weather-forcast-temperature-min"> 20°</span>
+                        <span class="weather-forcast-temperature-max"> 25°</span>
+                    </div>
+            </div>
+        </div>  
+    `;
+    })
+ 
+
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+    
+}
+
 function displayTemperature(response) {
     console.log(response.data);
     let temperatureElement = document.querySelector("#current-temperature");
@@ -32,6 +61,8 @@ function displayTemperature(response) {
     let dateElement =document.querySelector("#date");
     let iconElement =document.querySelector("#icon");
     let searchElement =document.querySelector("#search-city-input");
+
+
 
     celsiusTemperature = response.data.main.temp;
 
@@ -80,7 +111,7 @@ function showCelsiusTemperature(event) {
 }
 let celsiusTemperature = null;
 
-
+displayForecast();
 
 
 let form= document.querySelector("#search-city-form");
